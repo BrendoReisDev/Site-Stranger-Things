@@ -635,4 +635,108 @@ body,
     body {
         overflow-x: hidden;
     }
-} 
+}
+
+
+@media (max-width: 992px) {
+
+    .container-about,
+    .container-creator {
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+        justify-content: flex-start;
+        gap: 2rem;             
+        padding: 2rem 1rem;
+        height: auto;
+    }
+
+
+    .container-about-img,
+    .container-creator-img {
+        width: 100%;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1.5rem;
+    }
+
+
+    .container-about-img img,
+    .container-creator-img img,
+    .container-about-img .pers-01,
+    .container-about-img .pers-02,
+    .container-about-img .pers-03,
+    .container-about-img .pers-04,
+    .container-about-img .pers-05,
+    .container-about-img .pers-06,
+    .container-about-img .pers-07,
+    .container-about-img .pers-08,
+    .container-about-img .pers-09,
+    .container-about-img .pers-10,
+    .container-about-img .pers-11,
+    .container-creator-img .pers-01,
+    .container-creator-img .pers-03,
+    .container-creator-img .pers-05,
+    .container-creator-img .pers-07,
+    .container-creator-img .pers-09,
+    .container-creator-img .pers-11 {
+        width: 90%;       
+        max-width: 500px;  
+        height: auto;        
+        margin: 0 auto; 
+        object-fit: contain;
+        display: block;
+    }
+
+
+    .about-information,
+    .creator-information {
+        margin: 0;           
+        position: static !important;
+        top: auto !important;
+        left: auto !important;
+        max-width: 100%;
+        text-align: center;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 576px) {
+    .container-about-img img,
+    .container-creator-img img,
+    .container-about-img .pers-01,
+    .container-about-img .pers-02,
+    .container-about-img .pers-03,
+    .container-about-img .pers-04,
+    .container-about-img .pers-05,
+    .container-about-img .pers-06,
+    .container-about-img .pers-07,
+    .container-about-img .pers-08,
+    .container-about-img .pers-09,
+    .container-about-img .pers-10,
+    .container-about-img .pers-11,
+    .container-creator-img .pers-01,
+    .container-creator-img .pers-03,
+    .container-creator-img .pers-05,
+    .container-creator-img .pers-07,
+    .container-creator-img .pers-09,
+    .container-creator-img .pers-11 {
+        width: 95%;
+        max-width: 350px;
+    }
+
+    .about-information p,
+    .creator-information p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .container-about,
+    .container-creator {
+        gap: 1.5rem;
+        padding: 1.5rem 1rem;
+    }
+}
+ 
